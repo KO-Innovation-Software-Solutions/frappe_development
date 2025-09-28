@@ -89,7 +89,7 @@ def init_bench_if_not_exist(args):
 def create_site_in_bench(args):
     token = os.getenv("DEVELOPER_TOKEN")
     apps_to_get = [
-        ("payments", f"https://github.com/frappe/payments.git", "develop),
+        ("payments", f"https://github.com/frappe/payments.git", "develop"),
         ("erpnext", f"https://github.com/frappe/erpnext.git", "develop"),
         ("hrms", f"https://github.com/frappe/hrms.git", "develop"),
         ("telephony", f"https://github.com/frappe/telephony.git", "develop"),
