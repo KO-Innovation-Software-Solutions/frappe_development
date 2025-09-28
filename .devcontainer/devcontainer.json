@@ -1,0 +1,28 @@
+{
+  "name": "Frappe",
+  "forwardPorts": [8000, 9000, 6787],
+  "remoteUser": "frappe",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.live-server",
+        "mtxr.sqltools",
+        "visualstudioexptteam.vscodeintellicode",
+        "cweijan.vscode-database-client2",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "debug.node.autoAttach": "disabled"
+      }
+    }
+  },
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "frappe",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": {
+    "initDevSite": ["python", "installer.py", "--db-type", "mariadb"]
+  }
+}
