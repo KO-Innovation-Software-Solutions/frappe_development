@@ -1,5 +1,5 @@
 <div align="center">
-    <h2>Chohenix Codespaces</h2>
+    <h2>Chohenix Codespaces and Local Development for Frappe</h2>
 
 </div>
 
@@ -16,16 +16,7 @@ Chohenix codespaces allow quick and easy setup of the development environment in
 - cohenix_crm
 - cohenix_learning
 - cohenix_payment
-- cohenix_insight
 - cohenix_helpdesk
-- cohenix_drive
-- cohenix_gameplan
-- cohenix_healthcare
-- cohenix_education
-- cohenix_raven
-- cohenix_propvault
-- cohenix_builder
-- cohenix_pwabuilder
 
 ## Installation
 
@@ -46,11 +37,11 @@ Chohenix codespaces allow quick and easy setup of the development environment in
 
 ![COHENIX_CODESPACES](images/codespaces_02.png)
 
-- Type “cohenix_” in top search bar and all codespace you have access too will appear.
+- Type “frappe_cohenix” in top search bar and all codespace you have access too will appear.
 
 ![COHENIX_CODESPACES](images/codespaces_03.png)
 
-- Select “cohenix_codespaces” and then select the branch
+- Select “frappe_cohenix_development” and then select the branch
 
 ![COHENIX_CODESPACES](images/codespaces_04.png)
 
@@ -62,89 +53,12 @@ Chohenix codespaces allow quick and easy setup of the development environment in
 
 ![COHENIX_CODESPACES](images/codespaces_06.png)
 
-### Creating a dev or qa branch on your codespace in VS Code
-
-- Open a terminal.
-- Navigate to the “cohenix-bench” folder.
-
-    ```sh
-    cd cohenix-bench
-    ```
-    
-- Navigate to the “apps” folder.
-
-    ```sh
-    cd apps
-	```
-
-- Navigate to the respective module you will be working on (example: erpnext, frappe, hrms, …)
-
-    ```sh
-    cd "enter your module"
-    ```
-
-- Use your story id, task id (ticket id) in all caps as your branch name. (example COHNX-123)
-
-![COHENIX_CODESPACES](images/codespaces_07.png)
-
-- Type in the following GIT commands and press enter after each command.  
-
-	```sh
-    git checkout -b COHNX-123
-	```
-	```sh
-    git push
-    ```
-
-- If your branch is not being tracked you can use the following commands
-	```sh
-    git config --global --type bool push.autoSetupRemote true
-	```
-
-    or
-
-	```sh
-    git push --set-upstream origin COHNX-123
-	```
-
 - Your codespace has been created locally and remotely, you are ready to work!
-
-## Troubleshoot problems with codespace in VS Code
-### Unable to access repository
-- Once the workspace start and you are able to view a folder structure in VS Code Explorer.
-- Navigate to the “cohenix-bench\apps\( erpnext \ hrms \ ...) ” folder.
-- Run the following GIT command.
-	```sh
-    git checkout version-15
-    ```
-- If the following error is reported: "error: pathspec 'version-15' did not match any file(s) known to git"
-- Proceed with the following steps to Remove the remote site and re-add it.
-	```sh
-    git remote -v
-    ```
-- Copy the full url and take note of the remote site name (example: upstream)
-- First remove the remote site.
-
-    ```sh
-    git remote remove upstream
-    ```
-    
-- The re-add the remote site 
-
-    ```sh
-    git remote add upstream [paste url here]
-    ```
-
-- This should restore the remote site, pull the code as follow
-    
-    ```sh
-    git pull --rebase
-    ```
 
 ### How to view Logs
 
 - Once the workspace start and you are able to view a folder structure in VS Code Explorer.
-- Navigate to the “cohenix-bench\logs” folder.
+- Navigate to the “development-bench\logs” folder.
 - Select and open the “bench.log” file.
 
 ![COHENIX_CODESPACES](images/codespaces_08.png)
