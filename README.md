@@ -1,5 +1,5 @@
 <div align="center">
-    <h2>Chohenix Codespaces and Local Development for Frappe</h2>
+    <h2>Cohenix Codespaces and Local Development for Frappe</h2>
 
 </div>
 
@@ -7,9 +7,9 @@ This repository is maintained by Cohenix, a subsidiary of the Group Elephant Fun
 
 ## Introduction
 
-Chohenix codespaces allow quick and easy setup of the development environment in the cloud or on local VS Code instance, a ready out of the box development environment.
+Cohenix codespaces allow quick and easy setup of the development environment in the cloud or on local VS Code instance, a ready out of the box development environment.
 
-## Chohenix Repositories
+## Frappe Repositories
 
 - cohenix_erp
 - cohenix_hr
@@ -54,6 +54,8 @@ Chohenix codespaces allow quick and easy setup of the development environment in
 ![COHENIX_CODESPACES](images/codespaces_06.png)
 
 - Your codespace has been created locally and remotely, you are ready to work!
+- cd development-bench
+- Now you can run bench commands.
 
 ### How to view Logs
 
