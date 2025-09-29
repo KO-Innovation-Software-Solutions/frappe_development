@@ -33,8 +33,7 @@ Cohenix codespaces allow quick and easy setup of the development environment in 
 - Step 5: Vs Code will prompt you to "Reopen in Dev Container" click on that:
 - Step 6: The initial docker image will be pulled and installed in Docker Desktop:
 - Step 7: The script will then be run and you will be able to view the progress in the "development-bench" Logs folder:
-
-
+- Step 8: Once the script has finished runnig you can now safely cd to the bench folder and run commands (cd development-bench/) 
 
 
 ### Install codespace plugin on VS Code
