@@ -14,7 +14,26 @@
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
-        "debug.node.autoAttach": "disabled"
+        "debug.node.autoAttach": "disabled",
+         "workbench.colorCustomizations": {
+            "activityBar.activeBackground": "#3a6ea5",
+            "activityBar.background": "#274472",
+            "activityBar.foreground": "#ffffff",
+            "activityBar.inactiveForeground": "#f8f8f899",
+            "activityBarBadge.background": "#1b2845",
+            "activityBarBadge.foreground": "#ffffff",
+            "commandCenter.border": "#15202b99",
+            "sash.hoverBorder": "#5fa8d3",
+            "statusBar.background": "#19376d",
+            "statusBar.foreground": "#e7e8e9",
+            "statusBarItem.hoverBackground": "#274472",
+            "statusBarItem.remoteBackground": "#1b2845",
+            "statusBarItem.remoteForeground": "#ffffff",
+            "titleBar.activeBackground": "#205295",
+            "titleBar.activeForeground": "#fbfbfb",
+            "titleBar.inactiveBackground": "#19376d",
+            "titleBar.inactiveForeground": "#ffffff99"
+        }
       }
     }
   },
