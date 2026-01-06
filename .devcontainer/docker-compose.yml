@@ -1,4 +1,4 @@
-version: "3.7"
+# version: "3.7"
 services:
   mariadb:
     image: docker.io/mariadb:10.6
@@ -45,7 +45,9 @@ services:
     image: docker.io/redis:alpine
 
   frappe:
-    image: docker.io/frappe/bench:latest
+    build:
+      context: ..
+      dockerfile: resources/Dockerfile
     command: sleep infinity
     environment:
       - SHELL=/bin/bash
