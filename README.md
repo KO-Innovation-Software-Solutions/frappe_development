@@ -221,8 +221,63 @@ Chohenix devcontainer allow quick and easy setup of the development environment 
 ### Working with Remote Repositories:
 - Uploads local commits to the remote repository.
 
+
         git push
 
 - Fetches and merges changes from the remote repository.
 
         git pull
+
+
+
+
+git clone https://github.com/KO-Innovation-Software-Solutions/fleet_core.git
+git clone https://github.com/KO-Innovation-Software-Solutions/ui_core.git
+git clone https://github.com/KO-Innovation-Software-Solutions/fleet_iot.git
+git clone https://github.com/KO-Innovation-Software-Solutions/trip_core.git
+git clone https://github.com/KO-Innovation-Software-Solutions/kofleetz_core.git
+git clone https://github.com/KO-Innovation-Software-Solutions/service_core.git
+git clone https://github.com/KO-Innovation-Software-Solutions/business_core.git
+git clone https://github.com/KO-Innovation-Software-Solutions/fleet_logistics.git
+git clone https://github.com/KO-Innovation-Software-Solutions/ewaybill.git
+
+bench get-app fleet_core apps/fleet_core
+bench --site development.kofleetz install-app fleet_core
+
+bench get-app ui_core apps/ui_core
+bench --site development.kofleetz install-app ui_core
+
+bench get-app fleet_iot apps/fleet_iot
+bench --site development.kofleetz install-app fleet_iot
+
+bench get-app trip_core apps/trip_core
+bench --site development.kofleetz install-app trip_core
+
+bench get-app kofleetz_core apps/kofleetz_core
+bench --site development.kofleetz install-app kofleetz_core
+
+bench get-app service_core apps/service_core
+bench --site development.kofleetz install-app service_core
+
+bench get-app business_core apps/business_core
+bench --site development.kofleetz install-app business_core
+
+bench get-app ko_pilot apps/ko_pilot
+bench --site development.kofleetz install-app ko_pilot
+
+bench get-app fleet_logistics apps/fleet_logistics
+bench --site development.kofleetz install-app fleet_logistics
+
+bench get-app ewaybill apps/ewaybill
+bench --site development.kofleetz install-app ewaybill
+
+
+bench --site koins.kofleetz.ai install-app kofleetz_core
+bench --site  koins.kofleetz.ai install-app ui_core
+bench --site  koins.kofleetz.ai install-app fleet_core
+bench --site  koins.kofleetz.ai install-app fleet_iot
+bench --site  koins.kofleetz.ai install-app service_core
+bench --site  koins.kofleetz.ai install-app trip_core
+bench --site  koins.kofleetz.ai install-app business_core
+bench --site  koins.kofleetz.ai install-app fleet_logistics
+bench --site  koins.kofleetz.ai install-app ewaybill
