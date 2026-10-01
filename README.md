@@ -281,3 +281,5 @@ bench --site  koins.kofleetz.ai install-app trip_core
 bench --site  koins.kofleetz.ai install-app business_core
 bench --site  koins.kofleetz.ai install-app fleet_logistics
 bench --site  koins.kofleetz.ai install-app ewaybill
+
+<!-- E2E test marker: kofleetz-2424, 2026-10-01T12:11:46Z, safe to remove -->
